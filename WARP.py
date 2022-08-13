@@ -1,3 +1,4 @@
+#This is a Python code for weak axiom of revealed preference (WARP)
 import numpy as np
 
 #date A
