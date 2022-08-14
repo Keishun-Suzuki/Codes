@@ -49,8 +49,8 @@ plt.plot(xa[0],xa[1], marker='.', color="black", markersize="16")
 plt.plot(xb[0],xb[1], marker='.', color="black", markersize="16")
 
 #Label
-pyplot.text(xa[0]*0.98, xa[1]*1.05, "xA",  fontsize="20")
-pyplot.text(xb[0]*0.98, xb[1]*1.05, "xB",  fontsize="20")
+plt.text(xa[0]*0.98, xa[1]*1.05, "xA",  fontsize="20")
+plt.text(xb[0]*0.98, xb[1]*1.05, "xB",  fontsize="20")
 
 plt.title('Weak Axiom of Revealed Preference',  fontsize="20") 
 plt.xlabel('x1', fontsize="16") 
