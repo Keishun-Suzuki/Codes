@@ -1,5 +1,6 @@
 #This is a Python code for a simple pure exchange economy
 import sympy
+import numpy as np
 
 #Parameters of Cobb-Douglas utility function
 a = np.array([2, 1]) #consumer A: uA=(x1^a1)*(x2^a2)
@@ -31,7 +32,6 @@ display([xa1, xa2])
 display([xb1, xb2])
 
 import matplotlib.pyplot as plt
-import numpy as np
 from pylab import mpl
 
 plt.figure(figsize=(12,8))
@@ -65,11 +65,11 @@ plt.plot(ea[0],ea[1], marker='.', color="black", markersize="16")
 plt.plot(xa1,xa2, marker='.', color="red", markersize="16")
 
 #Label
-pyplot.text(ea[0]*0.98, ea[1]*1.05, "\u03c9", fontsize="24")
-pyplot.text(xa1*0.98, xa2*1.05, "E", fontsize="24")
-plt.title('Edgeworth Box', fontsize="24")
+plt.text(ea[0]*0.98, ea[1]*1.05, "\u03c9", fontsize="24")
+plt.text(xa1*0.98, xa2*1.05, "E", fontsize="24")
+plt.title('Edgeworth Box', fontsize="20")
 plt.xlabel('xA1', fontsize="16")
-plt.ylabel('xA2', fontsize="16")
+plt.ylabel('xA2',  fontsize="16")
 
 plt.grid(True)
 plt.legend(fontsize="16")
