@@ -4,12 +4,12 @@ import numpy as np
 #date A
 pa = np.array([2, 4]) #price vector: (pA1, pA2)
 xa = np.array([2, 6]) #consumption plan: (xA1, xA2)
-eaa = np.dot(pa, xa) #Expenditure (=Budget at date A)
+eaa = np.dot(pa, xa) #Expenditure (=Budget on date A)
 
 #date B
 pb = np.array([6, 2]) #price vector: (pB1, pB2)
 xb = np.array([6, 4]) #consumption plan: (xB1, xB2)
-ebb = np.dot(pb, xb) #Expenditure (=Budget at date B)
+ebb = np.dot(pb, xb) #Expenditure (=Budget on date B)
 
 #Counterfactual expenditure
 eab = np.dot(pa, xb) #Expenditure of xB on date A
